@@ -38,5 +38,8 @@ Route::get('/checkout', 'Front@checkout');
 Route::get('/search/{query}', 'Front@search');
 
 Route::get('blade', function() {
-    return view('page', array('name' => 'The Raven'));
+    return view('page', array(
+        'name' => 'The Raven',
+        'day' => 'Friday'
+    ));
 });
