@@ -37,6 +37,18 @@ class Hello extends Controller {
     }
 
     /**
+     * Display the specified resource.
+     *
+     * @param  int  $name
+     * @return Response
+     */
+    public function show($name) {
+        return view('hello', array(
+            'name' => $name
+        ));
+    }
+
+    /**
      * Show the form for editinng the specified resource.
      * 
      * @param int $id
